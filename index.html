@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-5">
+                <img src="me.jpg" alt="" class="w-20 h-20 rounded-full">
+                <h1 class="text-2xl font-bold">Lucas-Adebayo Daniel</h1>
+            </div>
+            
+            <nav>
+                <a href="#about" class="px-4">About</a>
+                <a href="#skills" class="px-4">Skills</a>
+                <a href="#projects" class="px-4">Projects</a>
+                <a href="#contact" class="px-4">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed">A Software Engineering Intern with hands-on experience in full-stack development, specializing in Django and Tailwind
+            CSS. Proven ability to deliver solutions in agile & CI/CD environments. Also skilled as a Junior Machine Learning Engineer
+            with a passion for applying data science principles to real-world problems. Eager to contribute technical proficiency and
+            enthusiasm for learning in a collaborative team setting.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">Software development</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">Django</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">Tailwind CSS</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">Python</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">JavaScript</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">Machine Learning</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-6">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-2xl font-bold mb-2">Http_server</h3>
+                <p class="text-lg leading-relaxed">In this project, I developed a custom HTTP server from scratch, demonstrating a deep understanding of fundamental web protocols and server-client interactions. This project involved building a fully functional HTTP server using Python, which could handle basic HTTP requests such as GET and POST, serve static files, and manage multiple client connections concurrently.</p>
+                <a href="https://github.com/coollad49/Http_server" class="text-blue-500">Github repo</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-2xl font-bold mb-2">Product Expiry Alert Management System</h3>
+                <p class="text-lg leading-relaxed">The Product Expiry Alert Management System is a web application designed to track and manage the expiration dates of products in inventory. It provides proactive alerts and notifications to ensure timely action on expiring products, thereby minimizing waste and optimizing inventory management.</p>
+                <a href="https://github.com/coollad49/PEAMS/" class="text-blue-500">Github repo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+            <form class="bg-white p-6 rounded shadow">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-medium">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-medium">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-medium">Message</label>
+                    <textarea id="message" class="w-full p-2 border rounded" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2024 Daniel. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
